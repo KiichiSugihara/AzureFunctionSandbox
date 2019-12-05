@@ -1,0 +1,7 @@
+# Trigger
+
+CosmosDB
+
+# Output
+
+CosmosDB

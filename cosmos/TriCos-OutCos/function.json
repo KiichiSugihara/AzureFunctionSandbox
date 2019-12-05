@@ -1,0 +1,23 @@
+{
+  "bindings": [
+    {
+      "type": "cosmosDBTrigger",
+      "name": "funcTriggerName",
+      "direction": "in",
+      "leaseCollectionName": "leases",
+      "connectionStringSetting": "cosmosAccountName_DOCUMENTDB",
+      "databaseName": "cosmosDatabaseName",
+      "collectionName": "funcTriggerCollectionName",
+      "createLeaseCollectionIfNotExists": true
+    },
+    {
+      "type": "cosmosDB",
+      "name": "funcOutputName",
+      "databaseName": "cosmosDatabaseName",
+      "collectionName": "outputCollectionName",
+      "createIfNotExists": false,
+      "connectionStringSetting": "cosmosAccountName_DOCUMENTDB",
+      "direction": "out"
+    }
+  ]
+}
